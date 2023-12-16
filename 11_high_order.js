@@ -1,18 +1,18 @@
 // forof loop
 
-let myarray = [1,2,3,4]
+let myarray = [1, 2, 3, 4]
 
 for (const num of myarray) {
-    // console.log(` value of i is ${num}`);
-    
+   // console.log(` value of i is ${num}`);
+
 }
 let name = "Saurav Jha"
 for (const userEach of name) {
-   if(userEach === " "){
-    continue;
+   if (userEach === " ") {
+      continue;
    }
-    // console.log(`each word is ${userEach}`);
-   
+   // console.log(`each word is ${userEach}`);
+
 }
 
 // Map
@@ -26,30 +26,30 @@ for (const userEach of name) {
 // console.log(map);
 
 // for (const [key,value] of map) {
-    // console.log(key,':-',value);
-    
+// console.log(key,':-',value);
+
 // }
 
 
 // forin loop
- const myObject = {
-    js:'javascript',
-    cpp:'c++',
-    rb:'ruby',
-    swift:'swift by app'
- } 
+const myObject = {
+   js: 'javascript',
+   cpp: 'c++',
+   rb: 'ruby',
+   swift: 'swift by app'
+}
 
- for (const key in myObject) {
-    // console.log(`${key}:${myObject[key]}`);
-    
- }
+for (const key in myObject) {
+   // console.log(`${key}:${myObject[key]}`);
 
- let myArrayNew = [1,2,3,4,5]
- 
- for (const key in myArrayNew) {
-    // console.log(`${key} is the index of  ${myArrayNew[key]}`);
-    
- }
+}
+
+let myArrayNew = [1, 2, 3, 4, 5]
+
+for (const key in myArrayNew) {
+   // console.log(`${key} is the index of  ${myArrayNew[key]}`);
+
+}
 
 //  const map = new Map()
 // map.set('IN','INDIA')
@@ -60,12 +60,12 @@ for (const userEach of name) {
 //    console.log(key,value); // This will not execute anytype of result because map is not iterable and if anything is not iterable then we cant perform forin loop on it....
 // }
 
-const coding = ["js","ruby","python","cpp","java"]
+const coding = ["js", "ruby", "python", "cpp", "java"]
 
 // for (let i = 0; i < coding.length; i++) {
 //    const element = coding[i];
 //    console.log(element);
-   
+
 // }
 
 // ++++++++++++++++++ forEach loop ++++++++++++++++++++++
@@ -74,18 +74,18 @@ const coding = ["js","ruby","python","cpp","java"]
 //    console.log(val);
 // })     // A Normal Function
 
-coding.forEach((val)=>{
-      // console.log(val);
+coding.forEach((val) => {
+   // console.log(val);
 }) // This is Arrow Function
 
-function printMe(item){
-// console.log(item)
+function printMe(item) {
+   // console.log(item)
 }
 
 coding.forEach(printMe)
 
-coding.forEach(function (item,index,arr){
-      //  console.log(arr);
+coding.forEach(function (item, index, arr) {
+   //  console.log(arr);
 })
 
 const myCoding = [
@@ -107,6 +107,6 @@ const myCoding = [
    }
 ]
 
-myCoding.forEach( (item,index,arr) => {
-            console.log(item.languageFileName);
+myCoding.forEach((item, index, arr) => {
+   console.log(item.languageFileName);
 })
