@@ -5,7 +5,7 @@ let dc_heros = ["superman","batman","flash"]
 // console.log(marvel_heros)
 
 let all_heros = marvel_heros.concat(dc_heros)
-// console.log(all_heros);
+console.log(all_heros);
 // console.log(all_heros[4]);
 
 // in push we can say that the we are pushing the values in original array but in concat we have to store the value in new variable then we can access the new array..
