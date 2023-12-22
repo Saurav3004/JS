@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="start">Start</button>
+    <button id="stop" >Stop</button>
+</body>
+<script>
+//     const div = document.createElement('div')
+//     // div.className = 'main'
+//     // div.id = Math.round(Math.random()*10 + 1)
+//     div.setAttribute('class','main')
+//     div.setAttribute('id',Math.round(Math.random()*10+1))
+//     // div.innerHTML = 'Hello'
+//    const set = document.createTextNode("Hello")
+//    div.appendChild(set)
+//    document.body.appendChild(div)
+//    console.log(div)
+// function addtags(languages){
+//      const element = document.createElement('h1')
+//      element.setAttribute('class','main')
+//      element.innerHTML = `${languages}`
+//      document.querySelector('.body').appendChild(element)
+// }
+// addtags("JavaScript")
+// addtags('python')
+// const select = document.querySelector('.language')
+// function addLang(langName){
+//          const li = document.createElement('li')
+//          const addText = document.createTextNode(langName)
+//          li.appendChild(addText)
+//          select.appendChild(li)
+// }
+// addLang("python")
+// addLang("typescript")
+// addLang("java")
+// addLang("swift")
+
+
+// edit 
+
+
+// const second = document.querySelector('li:nth-child(2)')
+// const newLi = document.createElement('h2')
+// // newLi.textContent = "mojo"
+// newLi.innerHTML = second.textContent
+// // document.querySelector('.language').appendChild(newLi)
+// second.replaceWith(newLi)
+
+// console.log(newLi);
+// newLi.innerHTML = 'Mojo'
+// const save = document.createTextNode('mojo')
+// newLi.appendChild(save)
+// newLi.style.color = 'red'
+
+// second.replaceWith(newLi)
+
+// REMOVE
+
+// const lastLang = document.querySelector('li:last-child')
+// // document.querySelector('.language').removeChild(lastLang)
+// lastLang.remove()
+    const text = document.querySelector('h1')
+    const start = document.querySelector('#start')
+    const stop = document.querySelector('#stop')
+    const buttons = document.querySelector('button')
+
+// let interval;
+const change = function(){
+    console.log("hi");
+}
+ start.addEventListener('click',function(e){
+    const interval = setInterval(change,1000)
+    stop.addEventListener('click',function(e){
+        clearInterval(interval)
+    })
+ })
+</script>
+</html> 
